@@ -8,6 +8,15 @@ const combinations = input => {
 
     const patternRepeated = pattern => patterns.some(characters => characters === pattern)
 
+    if(input.length === 2) {
+        console.log((input.reverse()).join(""))
+        return
+    }
+    else if(input.length === 1) {
+        console.log(input.join(""))
+        return
+    }
+
     for(let i = 0; i < input.length; i++) {
         input = originalInput.slice(0)
         let firstCharacter = input[i]
@@ -37,4 +46,4 @@ const combinations = input => {
     console.log("\nThere are a total of " + counter + " combinations")
 }
 
-combinations("staredom")
+combinations("s")
