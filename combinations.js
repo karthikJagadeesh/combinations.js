@@ -46,4 +46,4 @@ const combinations = input => {
     console.log("\nThere are a total of " + counter + " combinations")
 }
 
-combinations("s")
+combinations("star")
